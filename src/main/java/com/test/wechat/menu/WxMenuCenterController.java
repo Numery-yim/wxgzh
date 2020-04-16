@@ -32,7 +32,7 @@ public class WxMenuCenterController {
      * 定义微信菜单，并接受事件
      */
     @WxButton(type = WxButton.Type.VIEW,
-            group = WxButton.Group.LEFT,
+            group = WxButton.Group.MIDDLE,
             order = WxButton.Order.SECOND,
             url = "https://blog.csdn.net/",
             name= "CSDN博客")
@@ -45,7 +45,7 @@ public class WxMenuCenterController {
      * 定义微信菜单，并接受事件
      */
     @WxButton(type = WxButton.Type.VIEW,
-            group = WxButton.Group.LEFT,
+            group = WxButton.Group.MIDDLE,
             order = WxButton.Order.THIRD,
             url = "https://gitee.com/explore",
             name= "码云仓库")
