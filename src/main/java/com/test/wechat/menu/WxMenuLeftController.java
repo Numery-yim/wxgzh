@@ -48,5 +48,5 @@ public class WxMenuLeftController {
     public void leftGitHub(WxRequest wxRequest, WxUser wxUser) {
         log.info("GitHub：{}",wxUser);
     }
-
+//git
 }
