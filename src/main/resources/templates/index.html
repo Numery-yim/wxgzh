@@ -1,11 +1,305 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <title>springboot-thymeleaf demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.57, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>个人简历</title>
 </head>
-
 <body>
-<h1>test html</h1>
+<head><meta http-equiv="Content-Type" content="text/html; charset=gbk//IGNORE"></meta><style>
+    html,body,p,ul,table,tr,td{margin:0;padding:0}
+    a{text-decoration:none}
+    li{list-style:none}
+    img{border:0 none}
+    body{font-family:'Microsoft YaHei';font-size:14px}
+    div,span,a{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}
+    table{border-collapse:collapse;border-spacing:0;border:0 none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+    td{text-align:left}
+    .resume_clearfix{display:block;overflow:hidden;clear:both}
+    .all_wrap{width:657px}
+    .logo_divide{border-bottom:1px solid #b9b9b9}
+    .at{white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+    .page{width:2000px;margin:0 auto;padding:3px;background-color:#fff}
+    .gray{color:#919191 !important}
+    .l_green{color:#6d8194 !important}
+    .blue{color:#4567af !important}
+    .yellow{color:#fae001 !important}
+    .y_green{color:#a4b049 !important}
+    .s_blue{color:#00a0e9 !important}
+    .orange{color:#f39800 !important}
+    .resume_box{border:15px solid #efefef}
+    .company{font-size:12px;font-weight:bold}
+    .infomation_l{width:266px;vertical-align:top;background-color:#2d4e5c}
+    .top{margin:26px 0px 18px 0px}
+    .picture{text-align:center}
+    .name{height:80px;line-height:80px;font-size:36px;color:#fff;text-align:center}
+    .posi{width:265px;line-height:14px;text-align:center;padding:0 10px}
+    .mes_l{margin-left:20px}
+    .title{height:60px;font-weight:bold;color:#d8dcde}
+    .border_b2{margin-left:20px;border-bottom:1px solid #91a875}
+    .per_list{line-height:40px;font-size:12px;color:#d8dcde}
+    .title_iconl{*width:12px;padding-right:8px}
+    .title_icon1 img{margin-top:5px}
+    .b_border{border-top:1px solid #233c47}
+    .dir{vertical-align:top}
+    .limit1{width:180px}
+    .wid{width:225px}
+    .limit2{width:204px}
+    .con{position:relative;width:176px;height:16px;*height:15px;top:2px;border:1px solid #b9b9b9}
+    .rank{position:absolute;top:0;left:0;width:70%;height:16px;line-height:16px;text-indent:6px;top:0px;left:0px;background-color:#b9b9b9}
+    .email{max-width:146px;word-wrap:break-word}
+    .infomation_r{width:386px;vertical-align:top;padding-left:12px;background-color:#efefef}
+    .mes_r{margin-left:26px;padding:10px 0 16px 0}
+    .title_icon{*width:17px;padding-right:8px;border:0 none}
+    .title_icon img{margin-top:0px}
+    .title_txt{width:340px;height:28px;line-height:28px;font-weight:bold;color:#2d4e5c;text-align:left;border-bottom:1px solid #96a6ad}
+    .title_txt1{width:235px;height:27px;line-height:27px;font-weight:bold;color:#d8dcde;text-align:left}
+    .mes_boxl{margin:10px 0 22px 0}
+    .mes_detail{margin:10px 0px 16px 0px}
+    .mes_detail_a{margin-bottom:10px}
+    .mes_r .info_list{line-height:24px;font-size:12px;color:#000;overflow:hidden}
+    .mes_r .limit{width:290px}
+    .mes_r .edu{width:42px;line-height:15px;}
+    .mes_r .edu_a{width:100px;line-height:15px;}
+    .mes_r .reu{max-width:144px;line-height:15px;}
+    .mes_r .reu_a{max-width:190px;vertical-align:top;padding-right:20px}
+    .mes_r .in{line-height:22px;font-size:12px;color:#919191}
+    .mes_r .exp{width:180px}
+    .mes_r .pofi{width:106px;text-align:right;vertical-align:top}
+    .mes_r .edu1{width:206px;margin-right:20px}
+    .mes_r .edu2{width:220px;padding-right:20px}
+    .mes_r .edu2 span{display:block;width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .infomation_l2{width:276px;vertical-align:top;background-color:#466820}
+    .title_txt_b{width:340px;height:12px;line-height:3px;font-weight:bold;color:#466820;text-align:left;border-bottom:1px solid #a2b68c}
+    .mes_l
+    .mer_right{line-height:22px;font-size:12px;color:#919191;padding-left:25px;}
+</style></head><body><div xmlns="" class="page"><div class="all_wrap"><table class="resume_box"><tbody><tr>
+    <td class="infomation_l2">
+        <div class="top">
+
+            <p class="name">Numery</p>
+
+        </div>
+        <table class="border_b2"><tbody><tr class="title">
+            <td class="title_iconl" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon7_type1.png" width="12" height="13"></td>
+            <td class="wid"><span>个人信息</span></td>
+        </tr></tbody></table>
+
+        <div class="mes_boxl">
+
+            <table class="mes_l"><tbody>
+            <tr class="per_list">
+                <td><span>性别：</span></td>
+                <td><span class="y_green">女</span></td>
+            </tr>
+            <tr class="per_list">
+                <td><span>年龄：</span></td>
+                <td><span class="y_green">**</span></td>
+            </tr>
+            </tbody></table>
+            <table class="mes_l"><tbody><tr class="per_list">
+                <td class="dir"><span>籍贯：</span></td>
+                <td class="limit1"><span class="y_green">广东**</span></td>
+            </tr></tbody></table>
+
+            <table class="mes_l"><tbody><tr class="per_list">
+                <td class="dir"><span>phone：</span></td>
+                <td class="limit2"><span class="y_green">150********</span></td>
+            </tr></tbody></table>
+
+            <table class="mes_l"><tbody><tr class="per_list">
+                <td class="dir"><span>博客：</span></td>
+                <td class="limit1"><span class="y_green">Numery</span></td>
+            </tr></tbody></table>
+
+            <table class="mes_l"><tbody><tr class="per_list">
+                <td class="dir"><span>邮箱：</span></td>
+                <td class="limit1"><span class="y_green">390******@qq.com</span></td>
+            </tr></tbody></table>
+
+        </div>
+
+        <table class="border_b2"><tbody><tr class="title">
+            <td class="title_iconl" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon8_type1.png" width="12" height="13"></td>
+            <td class="wid"><span>技能及荣誉</span></td>
+        </tr></tbody></table>
+        <div class="mes_boxl"><table class="mes_l"><tbody>
+
+        <tr class="per_list">
+            <td><span>专业：</span></td>
+            <td class="limit1"><span class="y_green">****工程</span></td>
+        </tr>
+        <tr class="per_list">
+            <td class="dir"><span>办公：</span></td>
+            <td class="limit1"><a class="y_green" >******</a></td>
+        </tr>
+
+        <tr class="per_list">
+            <td class="dir"><span>其他：</span></td>
+            <td class="limit1"><span class="y_green">*****</span></td>
+        </tr>
+
+        </tbody></table></div>
+        <table class="border_b2"><tbody><tr class="title">
+            <td class="title_iconl" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon9_type1.png" width="12" height="13"></td>
+            <td class="wid"><span>语言能力证明</span></td>
+        </tr></tbody></table>
+        <div class="mes_boxl"><table class="mes_l"><tbody>
+
+
+        <tr class="per_list">
+            <td><span>中文：</span></td>
+            <td class="limit1"><span class="y_green">普通话**</span></td>
+        </tr>
+        <tr class="per_list">
+            <td class="dir"><span>英文：</span></td>
+            <td class="limit1"><a class="y_green" >大学英语**</a></td>
+        </tr>
+        </tbody></table></div>
+    </td>
+
+    <td class="infomation_r">
+
+        <table class="per_title"><tbody><tr>
+            <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon2_type2.png" alt="最高学历" width="17" height="16"></td>
+            <td width="340"><p class="title_txt_b">最高学历</p></td>
+        </tr></tbody></table>
+
+        <div class="mes_r">
+
+            <table><tbody><tr class="info_list">
+                <td class="edu"><span>本科：</span></td>
+                <td class="edu_a"><span class="gray">******</span></td>
+                <td class="edu"><span>年级：</span></td>
+                <td class="reu"><span class="gray">****级</span></td>
+            </tr></tbody></table>
+
+            <table><tbody><tr class="info_list">
+                <td class="edu"><span>学历：</span></td>
+                <td class="edu_a"><span class="gray">本科</span></td>
+                <td class="edu"><span>专业：</span></td>
+                <td class="reu"><span class="gray">电子信息工程</span></td>
+            </tr></tbody></table>
+
+            <table><tbody><tr class="info_list">
+                <td class="edu"><span>目前：</span></td>
+                <td class="gray limit"><span>**</span></td>
+            </tr></tbody></table>
+
+            <table><tbody><tr class="info_list">
+                <td class="edu"><span>时间：</span></td>
+                <td class="gray limit"><span>*****</span></td>
+            </tr></tbody></table>
+
+        </div>
+
+        <table class="per_title"><tbody><tr>
+            <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon1_type2.png" alt="教育经历" width="17" height="16"></td>
+            <td width="340"><p class="title_txt_b">教育背景</p></td>
+        </tr></tbody></table>
+
+        <div class="mes_r"><p class="in">主修课程：*****************。</p></div>
+
+        <table class="per_title"><tbody><tr>
+            <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon3_type2.png" alt="个人经历" width="17" height="16"></td>
+            <td width="340"><p class="title_txt_b">社会经验</p></td>
+        </tr></tbody></table>
+        <div class="mes_r">
+            <table><tbody><tr class="info_list">
+                <td class="edu"><span></span>校外</td>
+                <td class="exp"><span class="gray">棵唯教育科技有限公司-编程教师</span></td>
+                <td class="pofi"><span class="gray">2019.08-2020.01</span></td>
+            </tr></tbody></table>
+
+            <table><tbody>
+            <tr class="info_list"><td><span>工作内容：</span></td></tr>
+            <td>
+                <p style="text-indent:2em;font:400 12px Simsun;line-height:18px;"><a class="gray" >在广东棵唯教育科技有限公司当一名机器人老师，利用课余</span></a></p>
+                <p style="text-indent:2em;font:400 12px Simsun;line-height:18px;"><a class="gray" >时间在公办学校（如：湛江市第十六小学，湛江市二十四中</span></a></p>
+                <p style="text-indent:2em;font:400 12px Simsun;line-height:18px;"><a class="gray" >学等），教导孩子们机器人编程，荣获“月度优秀教师”，</span></a></p>
+                <p style="text-indent:2em;font:400 12px Simsun;line-height:18px;"><a class="gray" >具备优秀的表达与沟通能力。</span></a></p>
+            </td>
+            <!--注释:"text-indent:2em"能使文字空两个字符-->
+            </tbody></table>
+
+            <table><tbody><tr class="info_list">
+                <td class="edu"><span></span>校外</td>
+                <td class="exp"><span class="gray">建设银行-龙支付推广员</span></td>
+                <td class="pofi"><span class="gray">2017.10-2018.01</span></td>
+            </tr></tbody></table>
+
+            <table><tbody>
+            <tr class="info_list"><td><span>工作内容：</span></td></tr>
+
+            <td>
+                <p style="text-indent:2em;font:400 12px Simsun;line-height:18px;"><a class="gray" >与校园其他推广员逐个办理的做法不同，我先与各个班的班</span></a></p>
+                <p style="text-indent:2em;font:400 12px Simsun;line-height:18px;"><a class="gray" >长洽谈，以给予班集体相应提成的办法，高效迅速地拿下多</span></a></p>
+                <p style="text-indent:2em;font:400 12px Simsun;line-height:18px;"><a class="gray" >个班的业务，挣取得约一个学期的生活费。</span></a></p>
+
+            </td>
+            <!--注释:"text-indent:2em"能使文字空两个字符-->
+            </tbody></table>
+        </div>
+
+        <table class="per_title"><tbody><tr>
+            <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon3_type2.png" alt="校园经历" width="17" height="16"></td>
+            <td width="340"><p class="title_txt_b">校园经历</p></td>
+        </tr></tbody></table>
+        <div class="mes_r">
+
+            <table><tbody><tr class="info_list">
+                <td class="edu"><span>舞蹈队</span></td>
+                <td class="exp"><span class="gray"></span></td>
+                <td class="pofi"><span class="gray">2017.09-2018.06</span></td>
+            </tr></tbody></table>
+
+            <table><tbody>
+            <tr class="info_list"><td><span>工作内容：</span></td></tr>
+
+            <td>
+                <p style="text-indent:2em;font:400 12px Simsun;line-height:18px;"><a class="gray" >管理约30人的舞蹈团队，编排舞蹈，带队参与校园内外活动</span></a></p>
+                <p style="text-indent:2em;font:400 12px Simsun;line-height:18px;"><a class="gray" >。曾参加校舞蹈大赛并取得优秀奖。主动洽谈校外车展、店</span></a></p>
+                <p style="text-indent:2em;font:400 12px Simsun;line-height:18px;"><a class="gray" >铺开张、快闪等商演活动（曾与东风日产、爱玛电动、东阿</span></a></p>
+                <p style="text-indent:2em;font:400 12px Simsun;line-height:18px;"><a class="gray" >阿胶等达成合作），具备较成熟的团队管理能力和较强的业</span></a></p>
+                <p style="text-indent:2em;font:400 12px Simsun;line-height:18px;"><a class="gray" >务拓展能力。</span></a></p>
+            </td>
+            <!--注释:"text-indent:2em"能使文字空两个字符-->
+            </tbody></table>
+
+            <table><tbody><tr class="info_list">
+                <td class="edu"><span>教官</span></td>
+                <td class="exp"><span class="gray"></span></td>
+                <td class="pofi"><span class="gray">2018.07-2018.10</span></td>
+            </tr></tbody></table>
+
+            <table><tbody>
+            <tr class="info_list"><td><span>工作内容：</span></td></tr>
+
+            <td>
+                <p style="text-indent:2em;font:400 12px Simsun;line-height:18px;"><a class="gray" >配合学校武装部，组织一个班的新生顺利完成军训工作，有</a></p>
+                <p style="text-indent:2em;font:400 12px Simsun;line-height:18px;"><a class="gray" >吃苦耐劳的性格优势。</a></p>
+            </td>
+            <!--注释:"text-indent:2em"能使文字空两个字符-->
+            </tbody></table>
+        </div>
+
+        <table class="per_title"><tbody><tr>
+            <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon4_type2.png" alt="自我评价" width="17" height="16"></td>
+            <td width="340"><p class="title_txt_b">自我评价</p></td>
+        </tr></tbody></table>
+
+        <div class="mes_r">
+            <p class="in">本人性格热情开朗，善于与人沟通，工作勤奋，吃苦耐劳，尽职</p>
+            <p class="in">尽责，有耐心。学习刻苦认真，学习能力强，有终身学习理念。</p>
+
+
+        </div>
+
+</tr></tbody></table></div></div></body></html>
+
 </body>
 </html>

@@ -28,7 +28,7 @@ public class WxMenuLeftController {
     @WxButton(type = WxButton.Type.VIEW,
             group = WxButton.Group.LEFT,
             order = WxButton.Order.FIRST,
-            url = "http://123.57.177.220:8080",
+            url = "http://yim.gz2vip.idcfengye.com/main/resume",
             name= "个人简历")
     @WxAsyncMessage
     public void leftmySelf(WxRequest wxRequest, WxUser wxUser) {
