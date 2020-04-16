@@ -43,10 +43,10 @@ public class WxMenuLeftController {
     @WxButton(type = WxButton.Type.VIEW,
             group = WxButton.Group.LEFT,
             order = WxButton.Order.SECOND,
-            url = "https://github.com/liangyehao",
+            url = "https://github.com/Numery-yim",
             name= "GitHub仓库")
     public void leftGitHub(WxRequest wxRequest, WxUser wxUser) {
         log.info("GitHub：{}",wxUser);
     }
-//git
+
 }
