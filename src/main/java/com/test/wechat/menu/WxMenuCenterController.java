@@ -41,20 +41,10 @@ public class WxMenuCenterController {
     }
 
 
-    /**
-     * 定义微信菜单，并接受事件
-     */
+
     @WxButton(type = WxButton.Type.VIEW,
             group = WxButton.Group.MIDDLE,
             order = WxButton.Order.THIRD,
-            url = "https://gitee.com/explore",
-            name= "码云仓库")
-    public void gitee(WxRequest wxRequest, WxUser wxUser) {
-
-    }
-    @WxButton(type = WxButton.Type.VIEW,
-            group = WxButton.Group.MIDDLE,
-            order = WxButton.Order.FORTH,
             url = "https://www.icourse163.org/#",
             name = "慕课")
     @WxAsyncMessage
