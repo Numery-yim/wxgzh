@@ -10,7 +10,6 @@ import com.mxixm.fastboot.weixin.module.web.WxRequest;
 @WxController
 public class WxMenuCenterController {
 
-
     /**
      * 定义微信菜单
      */

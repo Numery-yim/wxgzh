@@ -10,9 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 
 
 @WxController
-@Slf4j
 public class WxMenuLeftController {
-
 
     /**
      * 定义微信菜单
@@ -29,7 +27,7 @@ public class WxMenuLeftController {
             group = WxButton.Group.LEFT,
             order = WxButton.Order.FIRST,
             url = "http://yim.gz2vip.idcfengye.com/main/resume",
-            name= "个人简历")
+            name= "个人介绍")
     @WxAsyncMessage
     public void leftmySelf(WxRequest wxRequest, WxUser wxUser) {
 
@@ -46,7 +44,7 @@ public class WxMenuLeftController {
             url = "https://github.com/Numery-yim",
             name= "GitHub仓库")
     public void leftGitHub(WxRequest wxRequest, WxUser wxUser) {
-        log.info("GitHub：{}",wxUser);
+
     }
 
 }
