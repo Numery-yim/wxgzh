@@ -4,12 +4,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
-/**
- * @author liangyehao
- * @version 1.0
- * @date 2020/3/11 9:42
- * @content
- */
+
 public class CheckUtils {
 
     /**

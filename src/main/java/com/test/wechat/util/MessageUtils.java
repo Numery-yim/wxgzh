@@ -13,12 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author liangyehao
- * @version 1.0
- * @date 2020/3/11 10:46
- * @content
- */
+
 public class MessageUtils {
     /**
      * 解析微信发来的请求（XML）
